@@ -256,7 +256,7 @@ describe('findTargetProjectWithImport', () => {
       'libs/proj/index.ts',
       ctx.nxJson.npmScope
     );
-    expect(similarImportFromNpm).toBeFalsy();
+    expect(similarImportFromNpm).toEqual('proj123-base');
   });
 
   it('should be able to sort graph nodes', () => {
